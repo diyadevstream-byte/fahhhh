@@ -87,9 +87,9 @@ const Featured = () => {
                                     addToCart(product);
                                 }}
                                 title="Add to Cart"
-                                className="w-10 h-10 rounded-full bg-white border border-gray-100 text-furnworld-dark flex items-center justify-center hover:bg-furnworld-gold hover:text-white hover:border-furnworld-gold transition-all duration-300 shadow-sm group"
+                                className="w-10 h-10 rounded-full bg-white border border-gray-100 text-furnworld-dark flex items-center justify-center hover:bg-furnworld-gold hover:text-white hover:border-furnworld-gold transition-all duration-300 shadow-sm"
                             >
-                                <BsCart2 size={18} className="group-hover:scale-110 transition-transform" />
+                                <BsArrowUpRight size={18} />
                             </button>
                         </div>
                     </div>

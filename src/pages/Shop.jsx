@@ -42,7 +42,7 @@ const Shop = () => {
                                 </div>
                                 <p className="text-gray-400 text-sm mb-6">Premium Finish • Solid Wood</p>
 
-                                <div className="w-full py-3 px-6 bg-furnworld-dark text-white rounded-full font-bold text-center shadow-md transition-all duration-300 transform group-hover:bg-furnworld-gold group-hover:scale-[1.03] group-hover:shadow-lg active:scale-95">
+                                <div className="w-full py-3 px-6 bg-gradient-to-r from-furnworld-brown to-furnworld-gold text-white rounded-full font-bold text-center shadow-md transition-all duration-300 transform group-hover:scale-[1.03] group-hover:shadow-lg active:scale-95">
                                     Buy Now
                                 </div>
                             </div>

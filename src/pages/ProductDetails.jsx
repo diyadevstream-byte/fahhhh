@@ -11,13 +11,6 @@ const ProductDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const { addToCart } = useCart();
-    const [added, setAdded] = React.useState(false);
-
-    const handleAddToCart = () => {
-        addToCart(product);
-        setAdded(true);
-        setTimeout(() => setAdded(false), 2000);
-    };
 
     // Fetch product by ID
     const product = products.find(p => p.id === id);
@@ -117,12 +110,11 @@ const ProductDetails = () => {
 
                 <div className="flex gap-4 pt-4">
                     <button
-                        onClick={handleAddToCart}
-                        disabled={added}
-                        className={`flex-1 py-4 ${added ? 'bg-furnworld-green' : 'bg-furnworld-gold'} text-white rounded-full font-bold text-lg hover:bg-furnworld-brown transition-all duration-300 shadow-lg hover:shadow-furnworld-gold/30 flex items-center justify-center gap-2 group`}
+                        onClick={() => addToCart(product)}
+                        className="flex-1 py-4 bg-furnworld-gold text-white rounded-full font-bold text-lg hover:bg-furnworld-brown transition-colors shadow-lg hover:shadow-furnworld-gold/30 flex items-center justify-center gap-2 group"
                     >
                         <BsCart2 className="group-hover:scale-110 transition-transform" />
-                        {added ? 'Added to Cart!' : 'Add to Cart'}
+                        Shop Now
                     </button>
                     <button className="px-6 py-4 border border-gray-300 rounded-full hover:bg-white hover:border-furnworld-dark transition-colors">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-600">
