@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { Flip } from 'gsap/flip';
+import { Flip } from 'gsap/Flip';
 import GeometricBackground from '../components/3d/GeometricBackground';
 
 gsap.registerPlugin(Flip);

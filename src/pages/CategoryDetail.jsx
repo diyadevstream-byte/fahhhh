@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
-import { Flip } from 'gsap/flip';
+import { Flip } from 'gsap/Flip';
 import { BsArrowLeft, BsFilter, BsCartPlus } from 'react-icons/bs';
 import GeometricBackground from '../components/3d/GeometricBackground';
 import { products } from '../data/products';
