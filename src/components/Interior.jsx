@@ -3,6 +3,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BsArrowRight } from 'react-icons/bs';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Interior = () => {
     const sectionRef = useRef(null);
     const textRef = useRef(null);

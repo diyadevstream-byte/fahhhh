@@ -3,6 +3,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BsTruck, BsShieldCheck, BsCurrencyDollar } from 'react-icons/bs';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const features = [
     {
         icon: <BsTruck size={32} />,

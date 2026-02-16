@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { products as allProducts } from '../data/products';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Featured = () => {
     // Select a few items to feature
     const featuredProducts = allProducts.filter(p =>

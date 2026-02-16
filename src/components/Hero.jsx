@@ -7,6 +7,8 @@ import { useCart } from '../context/CartContext';
 import Background3D from './Background3D';
 import VideoModal from './VideoModal';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Hero = () => {
     const [isVideoOpen, setIsVideoOpen] = useState(false);
     const heroRef = useRef(null);

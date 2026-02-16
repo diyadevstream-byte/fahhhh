@@ -55,7 +55,7 @@ const Background3D = () => {
                 {/* Floating Sofa Images */}
                 <Float speed={1.5} rotationIntensity={0.1} floatIntensity={0.5} floatingRange={[-0.2, 0.2]}>
                     <Image
-                        url="/src/assets/sofa_beige.png"
+                        url="/sofa_beige.png"
                         position={[3, 1.5, -2]}
                         scale={[3, 2]}
                         transparent
@@ -65,7 +65,7 @@ const Background3D = () => {
 
                 <Float speed={2} rotationIntensity={0.2} floatIntensity={0.6} floatingRange={[-0.3, 0.3]}>
                     <Image
-                        url="/src/assets/sofa_green.png"
+                        url="/sofa_green.png"
                         position={[-3, -1.5, -3]}
                         scale={[3.5, 2.5]}
                         transparent
