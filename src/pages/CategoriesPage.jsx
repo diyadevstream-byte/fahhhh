@@ -9,22 +9,22 @@ gsap.registerPlugin(Flip);
 const categories = [
     {
         name: 'Office',
-        image: '/src/assets/categories/office.jpg',
+        image: '/categories/office.jpg',
         speed: "1"
     },
     {
         name: 'House',
-        image: '/src/assets/categories/house.jpg',
+        image: '/categories/house.jpg',
         speed: "2"
     },
     {
         name: 'Kitchen',
-        image: '/src/assets/categories/kitchen.jpg',
+        image: '/categories/kitchen.jpg',
         speed: "1"
     },
     {
         name: 'Bedroom',
-        image: '/src/assets/categories/bedroom.jpg',
+        image: '/categories/bedroom.jpg',
         speed: "2"
     }
 ];

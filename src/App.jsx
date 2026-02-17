@@ -42,10 +42,10 @@ function AppContent() {
       }
     });
 
-    // Update scroll on route change after a small delay to allow DOM updates
-    setTimeout(() => {
-      scroll.update();
-    }, 100);
+    // Locomotive Scroll v5 handles updates automatically, .update() is not a function
+    // setTimeout(() => {
+    //   scroll.update();
+    // }, 100);
 
     return () => {
       if (scroll) scroll.destroy();

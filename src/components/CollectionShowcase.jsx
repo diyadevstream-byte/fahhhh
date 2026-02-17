@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BsArrowRight } from 'react-icons/bs';
+
+gsap.registerPlugin(ScrollTrigger);
 import { Link } from 'react-router-dom';
 
 const CollectionShowcase = () => {
@@ -30,7 +33,7 @@ const CollectionShowcase = () => {
             <div className="relative group overflow-hidden rounded-[2.5rem] h-[600px] bg-[#f8f7f2] border border-gray-100 shadow-sm transition-all duration-500 hover:shadow-2xl">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/src/assets/products/office/desk.jpg"
+                        src="/products/office/desk.jpg"
                         alt="Workspace Collection"
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90"
                     />
@@ -59,7 +62,7 @@ const CollectionShowcase = () => {
             <div className="relative group overflow-hidden rounded-[2.5rem] h-[600px] bg-[#f8f7f2] border border-gray-100 shadow-sm transition-all duration-500 hover:shadow-2xl">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/src/assets/products/house/sofa.jpg"
+                        src="/products/house/sofa.jpg"
                         alt="Living Room Collection"
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90"
                     />

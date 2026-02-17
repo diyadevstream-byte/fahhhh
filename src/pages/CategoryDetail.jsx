@@ -11,19 +11,19 @@ gsap.registerPlugin(Flip);
 
 const categoryMeta = {
     'Office': {
-        image: '/src/assets/categories/office.jpg',
+        image: '/categories/office.jpg',
         description: 'Design a workspace that inspires productivity and focus.'
     },
     'House': {
-        image: '/src/assets/categories/house.jpg',
+        image: '/categories/house.jpg',
         description: 'Complete furniture solutions for every room in your home.'
     },
     'Kitchen': {
-        image: '/src/assets/categories/kitchen.jpg',
+        image: '/categories/kitchen.jpg',
         description: 'Modern and functional kitchen setups for the heart of your home.'
     },
     'Bedroom': {
-        image: '/src/assets/categories/bedroom.jpg',
+        image: '/categories/bedroom.jpg',
         description: 'Create your personal sanctuary with our premium bedroom collection.'
     }
 };
@@ -39,11 +39,11 @@ const CategoryDetail = () => {
 
     // Fallback if no products found for this category yet
     const displayProducts = filteredProducts.length > 0 ? filteredProducts : [
-        { id: 1, name: 'Sample Product', price: 99.00, image: '/src/assets/products/office/desk.jpg' }
+        { id: 1, name: 'Sample Product', price: 99.00, image: '/products/office/desk.jpg' }
     ];
 
     const meta = categoryMeta[categoryName] || {
-        image: '/src/assets/categories/house.jpg',
+        image: '/categories/house.jpg',
         description: 'Premium furniture collections.'
     };
 
